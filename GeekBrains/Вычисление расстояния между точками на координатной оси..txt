@@ -1,0 +1,101 @@
+// ╬ ║ ═ ░ ▲ ► ¤
+void CAxisPrinter(int[,] matrix,int aX, int aY, int bX, int bY)
+{
+    int lines = matrix.GetLength(0),
+        columns = matrix.GetLength(1);
+    Console.Write("     ");
+    Console.WriteLine(new string('-', columns*2+1));
+    for (int i = 0; i < lines; i++)
+    {
+        Console.Write("     |");
+        for (int j = 0; j < columns; j++)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+            if (j== columns / 2 + aX && i == lines / 2 - aY)
+            {
+	            Console.ForegroundColor = ConsoleColor.Red;
+	            Console.Write("¤A");
+	            Console.ResetColor();
+            }
+            else if (j == columns / 2 + bX && i == lines / 2 - bY)
+            {
+	            Console.ForegroundColor = ConsoleColor.Red;
+	            Console.Write("¤B");
+	            Console.ResetColor();
+            }
+            else if (i == lines / 2 && j == columns / 2) Console.Write("╬");
+            else if (i == 0 && j == columns / 2) Console.Write("▲");
+            else if (i == lines / 2 && j == columns - 1) Console.Write("►x");
+            else if (i == lines / 2) Console.Write("══");
+            else if (j == columns / 2) Console.Write("║");
+            else
+            {
+	            Console.ResetColor();
+	            Console.Write("░░");
+            }
+        }
+        Console.ResetColor();
+        Console.WriteLine("|");
+    }
+    Console.Write("     ");
+    Console.WriteLine(new string('-', columns*2+1));
+}
+
+int UserInsert(int coordinate, string message)
+{
+    Console.Write(message);
+    while(!int.TryParse(Console.ReadLine(),out coordinate))
+        {
+        Console.Write($"Ошибка ввода. \n{message}");
+        }
+    return coordinate;
+}
+
+int CAxisAutoSizer(int aX, int aY, int bX, int bY)
+{
+    if(aX < 0) aX = -aX;
+    if(aY < 0) aY = -aY;
+    if(bX < 0) bX = -bX;
+    if(bY < 0) bY = -bY;
+    int[]array = {aX,aY,bX,bY};
+    int autosize = array[0];
+    for (int i = 1; i < array.Length; i++)
+    {
+        if(array[i] > autosize) autosize = array[i];
+    }
+    autosize = autosize * 2 + 1;
+    return autosize;
+}
+
+ double AB2Distance(int aX, int aY, int bX, int bY)
+ {
+	 double distance = (bX - aX) * (bX - aX) + (bY - aY) * (bY - aY);
+    return Math.Round(Math.Sqrt(distance), 2, MidpointRounding.ToZero);
+ }
+
+bool restart = true;
+while (restart)
+{
+    Console.Clear();
+	int size = default,
+        dotAx = default,
+		dotAy = default,
+        dotBx = default,
+        dotBy = default;
+	dotAx = UserInsert(dotAx, "     Введите координату точки А по Х: ");
+	dotAy = UserInsert(dotAy, "     Введите координату точки А по Y: ");
+	dotBx = UserInsert(dotBx, "     Введите координату точки B по X: ");
+	dotBy = UserInsert(dotBy, "     Введите координату точки B по Y: ");
+
+	size = CAxisAutoSizer(dotAx, dotAy, dotBx, dotBy);
+	Console.WriteLine($"     Максимально необходимый размер оси {size}x{size}.");
+	int[,] caxis = new int[size, size];
+
+	if (size < 100) CAxisPrinter(caxis, dotAx, dotAy, dotBx, dotBy);
+    else Console.WriteLine("     !!Визуализации не будет, ось слишком большая!!");
+	double ab2DistanseResult = AB2Distance(dotAx, dotAy, dotBx, dotBy);
+	Console.WriteLine($"     Расстояние между точками A и B = {ab2DistanseResult:f2}.");
+
+	Console.Write("\n     Enter - Заново. Что-то другое - Выход.");
+	restart = Console.ReadKey().Key == ConsoleKey.Enter;
+}
