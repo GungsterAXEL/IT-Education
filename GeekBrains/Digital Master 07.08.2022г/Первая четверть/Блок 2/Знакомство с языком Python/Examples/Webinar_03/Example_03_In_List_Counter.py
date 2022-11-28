@@ -16,15 +16,8 @@ u = "qwe"
 count = 0
 print(our_list)
 
-# for i in range(len(our_list)):
-#    if our_list[i] == u:
-#        count += 1
-#        if count == 2:
-#            break
-#print(f'Второе вхождение строки в список на {i} позиции.')
-
-for i in our_list:
-    if i == u:
+for i in range(len(our_list)):
+    if our_list[i] == u:
         count += 1
         if count == 2:
             break
