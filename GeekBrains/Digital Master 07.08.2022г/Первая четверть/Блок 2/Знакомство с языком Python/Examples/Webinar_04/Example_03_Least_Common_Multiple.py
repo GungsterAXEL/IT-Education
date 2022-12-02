@@ -7,6 +7,7 @@ from random import randint
 restart = ''
 while restart == '':
     a, b = randint(1, 50), randint(1, 50)
+
     if a > b:
         bigger = a
         minimal = b
@@ -14,9 +15,10 @@ while restart == '':
         bigger = b
         minimal = a
 
+    print('Табличка для проверки: ')
     i = 1
-    while i < b + 1:
-        print(i,':',i * a,':', i * b)
+    while i < bigger + 1:
+        print(i, ':', i * a, ':', i * b)
         i += 1
 
     if bigger % minimal == 0:
@@ -31,5 +33,5 @@ while restart == '':
             n_o_k += bigger
         print(f'Для чисел {a} и {b}.')
         print('НОК = ', n_o_k)
-    
-    restart = input('Рестарт?')
+
+    restart = input('Заново?')
