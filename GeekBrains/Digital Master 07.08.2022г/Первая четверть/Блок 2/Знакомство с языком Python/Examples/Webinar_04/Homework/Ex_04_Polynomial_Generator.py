@@ -18,4 +18,4 @@ while restart == '':
     fw('Equalation01.txt', k_list)
     print('В файл Equalation01.txt записано: ', *k_list, sep= "")
 
-    restart = input('Рестарт?\n')
+    restart = input('\nЗаново - Enter.\nЧто-то другое - выход.\n')
