@@ -16,7 +16,7 @@ restart = ''
 while restart == '':
     k = int(fic('Зададим максимальную степень?\nВведите целое положительное число: '))
     k_list = eqg(k)
-    filename = '.\GeekBrains\Digital Master 07.08.2022г\Первая четверть\Блок 2\Знакомство с языком Python\Examples\Webinar_04\Homework\Ex_04_Equalation.txt'
+    filename = '.\GeekBrains\Digital Master 07.08.2022г\Первая четверть\Блок 2\Знакомство с языком Python\Examples\Webinar_04\Homework\Ex_04_Equation.txt'
     fw(filename, k_list)
     print('В файл Ex_04_Equalation.txt записано: ', fr(filename))
 
