@@ -32,22 +32,40 @@ def random_int_number(min_value=0, max_value=101):
 
 
 # Генератор уравнений.
+# def equalation_generator(degree_power):
+#    equalation_list = []
+#    for i in range(degree_power + 1):
+#        if random_int_number(0, 10) > 4:
+#            random_number = random_int_number()
+#            if degree_power - i > 1 and random_number > 1:
+#                equalation_list.append(random_number)
+#                equalation_list.append(f'x**{degree_power-i}')
+#            elif degree_power - i == 1 and random_number > 1:
+#                equalation_list.append(random_number)
+#                equalation_list.append('x')
+#            elif degree_power - i == 0 and random_number > 0:
+#                equalation_list.append(random_number)
+#            if degree_power - i > 0 and random_number in equalation_list:
+#                equalation_list.append(choice('+-'))
+#    equalation_list.append(' = 0')
+#    return equalation_list
+
+
 def equalation_generator(degree_power):
     equalation_list = []
     for i in range(degree_power + 1):
-        random_number = random_int_number()
-        if degree_power - i > 1 and random_number > 1:
-            equalation_list.append(random_number)
-            equalation_list.append('x^')
-            equalation_list.append(degree_power-i)
-        elif degree_power - i == 1 and random_number > 1:
-            equalation_list.append(random_number)
-            equalation_list.append('x')
-        elif degree_power - i == 0 and random_number > 0:
-            equalation_list.append(random_int_number())
-        if degree_power - i > 0 and random_number in equalation_list:
+        if random_int_number(0, 2) > 0:
+            random_number = random_int_number()
+            if degree_power - i > 1:
+                equalation_list.append(
+                    f'{random_number}x**{degree_power-i}' if random_number > 1 else f'x**{degree_power - i}')
+            elif degree_power - i == 1:
+                equalation_list.append(f'{random_number}x' if random_number > 1 else f'x')
+            else:
+                if random_number != 0:
+                    equalation_list.append(f'{random_number}')
             equalation_list.append(choice('+-'))
-    equalation_list.append(' = 0')
+    equalation_list[len(equalation_list) - 1] = '= 0'
     return equalation_list
 
 
@@ -102,8 +120,14 @@ def prime_factors_finder(number):
     return prime_factors_list
 
 
-# Запись информации в файл.
+# Запись в файл.
 def file_writer(file_name, some_list):
     with open(file_name, 'w') as file:
-        #file.write(some_list)
-        print(*some_list, sep='', file = file)
+        print(*some_list, sep=' ', file=file)
+
+
+# Чтение из файла.
+def file_reader(file_name):
+    with open(file_name, 'r') as file:
+        content = file.read()
+    return content

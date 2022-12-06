@@ -9,13 +9,15 @@
 '''
 from Hw_Methods import (equalation_generator as eqg,
                         file_writer as fw,
+                        file_reader as fr,
                         float_input_checker as fic)
 
 restart = ''
 while restart == '':
     k = int(fic('Зададим максимальную степень?\nВведите целое положительное число: '))
     k_list = eqg(k)
-    fw('Equalation01.txt', k_list)
-    print('В файл Equalation01.txt записано: ', *k_list, sep= "")
+    filename = '.\GeekBrains\Digital Master 07.08.2022г\Первая четверть\Блок 2\Знакомство с языком Python\Examples\Webinar_04\Homework\Ex_04_Equalation.txt'
+    fw(filename, k_list)
+    print('В файл Ex_04_Equalation.txt записано: ', fr(filename))
 
     restart = input('\nЗаново - Enter.\nЧто-то другое - выход.\n')
