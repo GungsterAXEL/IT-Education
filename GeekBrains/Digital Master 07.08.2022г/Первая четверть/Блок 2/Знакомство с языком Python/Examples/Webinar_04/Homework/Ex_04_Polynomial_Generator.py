@@ -7,7 +7,7 @@
 
     - k=2 => 2*x² + 4*x + 5 = 0 или x² + 5 = 0 или 10*x² = 0
 '''
-from Hw_Methods import (equalation_generator as eqg,
+from Hw_Methods import (equation_generator as eqg,
                         file_writer as fw,
                         file_reader as fr,
                         float_input_checker as fic)

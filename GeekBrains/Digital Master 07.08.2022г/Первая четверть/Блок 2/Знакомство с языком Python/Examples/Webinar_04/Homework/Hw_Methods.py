@@ -32,26 +32,7 @@ def random_int_number(min_value=0, max_value=101):
 
 
 # Генератор уравнений.
-# def equalation_generator(degree_power):
-#    equalation_list = []
-#    for i in range(degree_power + 1):
-#        if random_int_number(0, 10) > 4:
-#            random_number = random_int_number()
-#            if degree_power - i > 1 and random_number > 1:
-#                equalation_list.append(random_number)
-#                equalation_list.append(f'x**{degree_power-i}')
-#            elif degree_power - i == 1 and random_number > 1:
-#                equalation_list.append(random_number)
-#                equalation_list.append('x')
-#            elif degree_power - i == 0 and random_number > 0:
-#                equalation_list.append(random_number)
-#            if degree_power - i > 0 and random_number in equalation_list:
-#                equalation_list.append(choice('+-'))
-#    equalation_list.append(' = 0')
-#    return equalation_list
-
-
-def equalation_generator(degree_power):
+def equation_generator(degree_power):
     equalation_list = []
     for i in range(degree_power + 1):
         if random_int_number(0, 2) > 0:
