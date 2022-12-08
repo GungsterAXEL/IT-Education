@@ -22,19 +22,16 @@ def int_choice_range_checker(message, minimum_choice, maximum_choice):
         return user_choice
 
 
-# "Проброс монетки".
+# "Взбрасывание монетки".
 def coin_toss(message):
     player_name = input(choice(message))
     bot_name = ['(* ^ ω ^)', '(」°ロ°)」', '(‡▼益▼)', 'ʕ ᵔᴥᵔ ʔ']
+    player_1 = player_name
+    player_2 = choice(bot_name)
+    
     if randint(0, 2) > 0:
-        player_1 = player_name
-        player_2 = choice(bot_name)
+        man = True
     else:
-        player_1 = choice(bot_name)
-        player_2 = player_name
-    player_sequence = {player_1 : 0, player_2 : 0}
+        man = False
+    player_sequence = [man, player_1, player_2]
     return player_sequence
-
-
-#
-#def player_step():
