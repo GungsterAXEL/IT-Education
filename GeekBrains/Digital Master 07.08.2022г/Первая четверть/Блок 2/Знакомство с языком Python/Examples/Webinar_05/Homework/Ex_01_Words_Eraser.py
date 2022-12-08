@@ -1,3 +1,14 @@
+п»ї'''
+    1. РќР°РїРёС€РёС‚Рµ РїСЂРѕРіСЂР°РјРјСѓ, СѓРґР°Р»СЏСЋС‰СѓСЋ РёР· С„Р°Р№Р»Р° РІСЃРµ СЃР»РѕРІР°, СЃРѕРґРµСЂР¶Р°С‰РёРµ "Р°Р±РІ".
 '''
-    1. Напишите программу, удаляющую из файла все слова, содержащие "абв".
-'''
+
+file_name = '.\GeekBrains\Digital Master 07.08.2022Рі\РџРµСЂРІР°СЏ С‡РµС‚РІРµСЂС‚СЊ\Р‘Р»РѕРє 2\Р—РЅР°РєРѕРјСЃС‚РІРѕ СЃ СЏР·С‹РєРѕРј Python\Examples\Webinar_05\Homework\Ex_01_Words_Eraser.txt'
+
+with open(file_name, 'r') as data:
+    content = ' '.join(
+        list(filter(lambda x: 'Р°Р±РІ' not in x.lower(), data.read().split())))
+
+with open(file_name, 'w') as data:
+    data.write(content)
+
+print(content)
