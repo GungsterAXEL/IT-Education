@@ -1,6 +1,6 @@
 ﻿from random import randint, choice
 
-
+# Случайный выбор сообщения из списка.
 def message_choice(message):
     return choice(message)
 
@@ -37,6 +37,4 @@ def coin_toss(message):
 
 
 #
-#def game_process(coin_toss_result):
-#    restart = ''
-#    while restart == '':
+#def player_step():
