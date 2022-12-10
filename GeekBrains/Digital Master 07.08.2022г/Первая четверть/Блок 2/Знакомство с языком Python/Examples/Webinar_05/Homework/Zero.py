@@ -5,8 +5,25 @@ def message_choice(message):
     return choice(message)
 
 
-# Проверка выбора.
+# Проверка выбора в игре с конфетками.
 def int_choice_range_checker(message, minimum_choice, maximum_choice):
+    out_message = choice(message)
+    user_choice = input(out_message)
+    try:
+        user_choice = int(user_choice)
+        if user_choice < minimum_choice or user_choice > maximum_choice:
+            print(f'Минимально возможный выбор: {minimum_choice}.\
+            \nМаксимальный: {maximum_choice}.')
+            user_choice = int_choice_range_checker(message, minimum_choice, maximum_choice)
+    except:
+        print('Ошибка ввода!')
+        user_choice = int_choice_range_checker(message, minimum_choice, maximum_choice)
+    finally:
+        return user_choice
+
+
+# Проверка выбора в крестиках-ноликах.
+def xs_and_os_input_checker(message, minimum_choice, maximum_choice):
     out_message = choice(message)
     user_choice = input(out_message)
     try:
