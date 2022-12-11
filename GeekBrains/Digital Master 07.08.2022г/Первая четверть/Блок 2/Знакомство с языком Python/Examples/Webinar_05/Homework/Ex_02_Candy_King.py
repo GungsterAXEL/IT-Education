@@ -12,7 +12,7 @@
     a) Добавьте игру против бота
     b) Подумайте как наделить бота "интеллектом"
 '''
-from Zero import int_choice_range_checker as icrc, coin_toss, message_choice
+from Zero import int_choice_range_checker as icrc, coin_toss, message_choice, bot_choice
 
 candy = 2021
 max_choice = 28
@@ -40,32 +40,19 @@ while candy > 0:
         print(f'\n{message_choice(candy_count)}{candy}.', *player, ' vs ', *bot, '.')
     if not_bot == True:
         print(f'\nХодит {player[0]}.')
-
         candy_choice = icrc(candy_take, min_choice, max_choice)
         candy -= candy_choice
         player[1] += candy_choice
         not_bot = not not_bot
     else:
         print(f'\n\tХодит {bot[0]}.')
-        if candy - max_choice == 0:
-            candy_choice = max_choice
-        elif candy - max_choice == max_choice:
-            candy_choice = max_choice - 1
-        elif candy % max_choice == 0 and candy - max_choice > max_choice:
-            candy_choice = max_choice
-        elif candy % max_choice > 0 and candy - max_choice < max_choice:
-            candy_choice = candy - max_choice
-        else:
-            candy_choice = candy % max_choice
-        if candy_choice == 0: candy_choice = 1
-
+        candy_choice = bot_choice(candy, max_choice)
         print(f'\t{message_choice(bot_talking)}{candy_choice}.')
         candy -= candy_choice
         bot[1] += candy_choice
         not_bot = not not_bot
     step += 1
     
-
 if not_bot == True:
     print(f'{bot[0]} выиграл все конфеты.')
 else:
