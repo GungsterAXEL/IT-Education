@@ -31,13 +31,12 @@ def int_choice_range_checker(message, minimum_choice, maximum_choice):
 
 # Выбор количества конфет ботом.
 def bot_choice(candy, max_choice):
-    if candy == max_choice or candy - max_choice > max_choice:
+    if candy - max_choice > max_choice * 2:
+        candy_choice = random_int_number(1, max_choice)
+    elif candy == max_choice or candy - max_choice > max_choice:
         candy_choice = max_choice
     elif candy - max_choice < max_choice:
         candy_choice = candy - max_choice - 1
-    else:
-        candy_choice = random_int_number(1, max_choice)
-    if candy_choice <= 0: candy_choice = 1
     return candy_choice
 
 
@@ -93,4 +92,31 @@ def win_lose_checker(cells):
         if cells[variant[0]] == cells[variant[1]] == cells[variant[2]]:
             return False
     return True
-    
+
+
+# Может и ВинРАР.
+def my_winrar_compression(input_text):
+    output_list = []
+    count = 0
+    for i in range(len(input_text) - 1):
+        if input_text[i] == input_text[i + 1]:
+            count += 1
+        else:
+            output_list.append(f'{count + 1}{input_text[i]}')
+            count = 0
+        if i == len(input_text) - 2:
+            output_list.append(f'{count + 1}{input_text[i]}')
+        elif count > 8:
+            output_list.append(f'{count}{input_text[i]}')
+            count = 0
+    output_list = ''.join(map(str, output_list))
+    return output_list
+
+
+def my_winrar_decompression(input_text):
+    content = []
+    for i in range(len(input_text) - 1):
+        if input_text[i].isdigit():
+            content.append(int(input_text[i]) * input_text[i + 1])
+    content = ''.join(map(str, content))
+    return content
