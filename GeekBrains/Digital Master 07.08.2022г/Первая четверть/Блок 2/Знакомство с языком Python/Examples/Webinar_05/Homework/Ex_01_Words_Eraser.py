@@ -3,6 +3,9 @@
 '''
 
 file_name = '.\GeekBrains\Digital Master 07.08.2022г\Первая четверть\Блок 2\Знакомство с языком Python\Examples\Webinar_05\Homework\Ex_01_Words_Eraser.txt'
+with open(file_name, 'r') as file:
+    content = file.read()
+print(content)
 
 with open(file_name, 'r') as data:
     content = ' '.join(
@@ -10,5 +13,4 @@ with open(file_name, 'r') as data:
 
 with open(file_name, 'w') as data:
     data.write(content)
-
 print(content)

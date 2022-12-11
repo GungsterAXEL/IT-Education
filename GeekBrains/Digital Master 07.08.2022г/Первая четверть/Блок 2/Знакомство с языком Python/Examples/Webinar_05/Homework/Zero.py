@@ -95,6 +95,7 @@ def win_lose_checker(cells):
 
 
 # Может и ВинРАР.
+# Архивация.
 def my_winrar_compression(input_text):
     output_list = []
     count = 0
@@ -113,6 +114,7 @@ def my_winrar_compression(input_text):
     return output_list
 
 
+# Разархивация.
 def my_winrar_decompression(input_text):
     content = []
     for i in range(len(input_text) - 1):
