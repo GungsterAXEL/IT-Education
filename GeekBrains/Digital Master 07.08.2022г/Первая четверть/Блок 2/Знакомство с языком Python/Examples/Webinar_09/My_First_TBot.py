@@ -1,6 +1,6 @@
 from telebot import TeleBot, types
 
-TOKEN = '5747396951:AAG1aDmsQjB1U07vmTdlrpKds7qcIp1NlE8'
+TOKEN = '5917885348:AAHOQHN4LEGoc2zjou4D0Aco57Qg13PTCNo'
 
 bot = TeleBot(TOKEN)
 
