@@ -7,6 +7,11 @@ def expression_splitter(math_expression: str):
     math_expression = math_expression.split()
     while '=' in math_expression:
         math_expression.pop()
+    if math_expression[0] == '-' and math_expression[1].isdigit():
+        math_expression[0] += math_expression[1]
+        math_expression.pop(1)
+    elif math_expression[0] == '-' and math_expression[1] == '(':
+        math_expression = ['0', *math_expression]
     return math_expression
 
 
@@ -20,7 +25,8 @@ def reverse_polish_notation_maker(math_expression: list):
         elif value in ')':
             while stack[-1] != '(':
                 rstack.append(stack.pop())
-            stack.pop()
+            if stack[-1] == '(':
+                stack.pop()
         elif value in '+-*/':
             if len(stack) == 0 or priority[stack[-1]] < priority[value]:
                 stack.append(value)
