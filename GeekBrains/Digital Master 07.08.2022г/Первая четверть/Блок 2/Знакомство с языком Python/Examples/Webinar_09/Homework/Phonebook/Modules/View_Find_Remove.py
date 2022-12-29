@@ -1,26 +1,19 @@
-from telebot import TeleBot, types
 from ..Logger import Logger
 import os
 os.chdir(os.path.dirname(__file__))
 
-TOKEN = '5917885348:AAHOQHN4LEGoc2zjou4D0Aco57Qg13PTCNo'
 
-bot = TeleBot(TOKEN)
-
-
-@bot.message_handler()
-def phonebook_view(message):
+def phonebook_view(message, bot):
     try:
         with open(r'.\Phonebook\Database\PhoneBook.txt', 'r', encoding='utf-8') as phone_data:
             bot.send_message(message.chat.id, text=f'Все контакты:\n{phone_data.read().replace(";", " ")}\nКонец вывода.')
             Logger.log_logger('Phonebook_View', True)
     except:
-        bot.send_message(
-            message.chat.id, 'Ошибка! Обратитесь к администратору!')
+        bot.send_message(message.chat.id, 'Ошибка! Обратитесь к администратору!')
         Logger.log_logger('Phonebook_View', False)
 
 
-def phonebook_find(message):
+def phonebook_find(message, bot):
     try:
         word = message.text
         with open(r'.\Phonebook\Database\PhoneBook.txt', 'r', encoding='utf-8') as file:
@@ -34,13 +27,13 @@ def phonebook_find(message):
         else:
             bot.send_message(message.chat.id, text='Имя Фамилия Номер Заметка:')
             for i in temp:
-                bot.send_message(message.chat.id, text=f'{i}')
+                bot.send_message(message.chat.id, text=f'{i.replace(";", " ")}')
         Logger.log_logger(f'Phonebook_Find: {word}', True)
     except:
         Logger.log_logger(f'Phonebook_Find: {word}', False)
 
 
-def phonebook_remove(message):
+def phonebook_remove(message, bot):
     try:
         word = message.text
         with open(r'.\Phonebook\Database\PhoneBook.txt', 'r', encoding='utf-8') as file:

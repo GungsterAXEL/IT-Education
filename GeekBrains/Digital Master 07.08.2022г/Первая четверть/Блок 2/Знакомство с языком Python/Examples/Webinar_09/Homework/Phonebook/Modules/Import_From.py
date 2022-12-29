@@ -1,5 +1,4 @@
 # Import (считывает импортируемый файл и добавляет все записи оттуда в БД)
-from telebot import TeleBot, types
 from .Add import *
 import openpyxl
 from ..Logger import Logger
@@ -7,9 +6,6 @@ import os
 
 os.chdir(os.path.dirname(__file__))
 
-TOKEN = '5917885348:AAHOQHN4LEGoc2zjou4D0Aco57Qg13PTCNo'
-
-bot = TeleBot(TOKEN)
 
 def import_file_delete(file_path):
     try:
@@ -52,8 +48,7 @@ def xlsx_import(file_path):
         Logger.log_logger('XLSX_Import', False)
 
 
-@bot.message_handler(content_types=['document'])
-def download_document(message):
+def download_document(message, bot):
     try:
         file_id = message.document.file_name
         file_id_info = bot.get_file(message.document.file_id)

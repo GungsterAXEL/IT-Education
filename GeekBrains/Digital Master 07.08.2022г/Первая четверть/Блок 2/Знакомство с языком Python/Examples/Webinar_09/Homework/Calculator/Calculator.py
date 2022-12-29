@@ -66,6 +66,6 @@ def calculator(message):
     math_expression = expression_calculator(
         reverse_polish_notation_maker(expression_splitter(math_expression)))
     if float(math_expression) - int(math_expression) > 0:
-        return math_expression
+        return round(math_expression, 3)
     else:
         return int(math_expression)
