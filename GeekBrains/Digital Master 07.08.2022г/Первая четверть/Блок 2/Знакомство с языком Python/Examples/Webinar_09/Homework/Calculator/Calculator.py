@@ -1,6 +1,6 @@
 # Разбитие строки на операнды и операторы.
 def expression_splitter(math_expression: str):
-    math_expression = math_expression.replace(',', '.')
+    math_expression = math_expression.replace(',', '.').replace('i', 'j')
     for value in math_expression:
         if value in '+-*/()=':
             math_expression = math_expression.replace(f'{value}', f' {value} ')
@@ -33,6 +33,8 @@ def reverse_polish_notation_maker(math_expression: list):
             elif priority[stack[-1]] >= priority[value]:
                 rstack.append(stack.pop())
                 stack.append(value)
+        elif 'j' in value:
+            rstack.append(complex(value))
         else:
             rstack.append(float(value))
     rstack.extend(stack[::-1])
@@ -65,7 +67,9 @@ def calculator(message):
     math_expression = str(message)
     math_expression = expression_calculator(
         reverse_polish_notation_maker(expression_splitter(math_expression)))
-    if float(math_expression) - int(math_expression) > 0:
+    if math_expression == complex(math_expression):
+        return math_expression
+    elif float(math_expression) - int(math_expression) > 0:
         return round(math_expression, 3)
     else:
         return int(math_expression)

@@ -171,3 +171,8 @@
 29.12.2022 23:05 - Phonebook_Find: Джимми - True;
 29.12.2022 23:07 - Phonebook: Поиск контакта  - True;
 29.12.2022 23:07 - Phonebook_Find: Джимми - True;
+30.12.2022 21:00 - Calculator: 1000-7 is  - True;
+30.12.2022 21:01 - Calculator: 372:2 is  - False;
+30.12.2022 21:01 - Calculator: 1000×7÷(3+4) is  - False;
+30.12.2022 21:01 - Calculator: 1000 is  - True;
+30.12.2022 21:03 - Calculator: 1000*7/(3+4) is  - True;
