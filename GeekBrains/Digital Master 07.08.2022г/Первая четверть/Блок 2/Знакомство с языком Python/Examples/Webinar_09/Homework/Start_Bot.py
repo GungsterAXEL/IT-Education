@@ -57,7 +57,7 @@ def calculator_markup():
     return calc_markup
 
 
-# Меню меню записной книжки.
+# Меню записной книжки.
 def phonebook_markup():
     phone_markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     phonebook_menu = ('Добавить запись', 'Просмотр всех записей', 'Импорт',
@@ -85,6 +85,11 @@ def xo_markup():
 '''
     Старт бота.
 '''
+
+
+@bot.message_handler(commands=['logs'])
+def log_view(message):
+    bot.send_document(message.chat.id, open(r'Phonebook\Logger\Log_File.txt', 'rb'))
 
 
 @bot.message_handler(commands=['start'])
