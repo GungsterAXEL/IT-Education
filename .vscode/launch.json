@@ -1,0 +1,97 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Test",
+            "request": "launch",
+            "mainClass": "Homework.Test",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_04_WTFEquation",
+            "request": "launch",
+            "mainClass": "Homework.Ex_04_WTFEquation",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_03_LowLvlCalc",
+            "request": "launch",
+            "mainClass": "Homework.Ex_03_LowLvlCalc",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_02_NaturalLine",
+            "request": "launch",
+            "mainClass": "Homework.Ex_02_NaturalLine",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_01_ArithmeticFactorial",
+            "request": "launch",
+            "mainClass": "Homework.Ex_01_ArithmeticFactorial",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_01",
+            "request": "launch",
+            "mainClass": "Homework.Ex_01",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_03_ValToEnd",
+            "request": "launch",
+            "mainClass": "Example_03_ValToEnd",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_02",
+            "request": "launch",
+            "mainClass": "Example_02",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_01_Base",
+            "request": "launch",
+            "mainClass": "Example_01_Base",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_01",
+            "request": "launch",
+            "mainClass": "Example_01",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch program",
+            "request": "launch",
+            "mainClass": "program"
+        },
+        {
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/GeekBrains/Digital Master 07.08.2022г/Первая четверть/Блок 1/БутКемп 22.10-20.11.2022г/Программист/BootCamp_Examples/C#/RaceOfMatrixMultiply/TestSortList/bin/Debug/net6.0/TestSortList.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/GeekBrains/Digital Master 07.08.2022г/Первая четверть/Блок 1/БутКемп 22.10-20.11.2022г/Программист/BootCamp_Examples/C#/RaceOfMatrixMultiply/TestSortList",
+            "console": "internalConsole",
+            "stopAtEntry": false
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach"
+        }
+    ]
+}
