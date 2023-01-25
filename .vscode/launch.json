@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Example_04_TestToFile",
+            "request": "launch",
+            "mainClass": "Example_04_TestToFile",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_03_StringPalindrom",
+            "request": "launch",
+            "mainClass": "Example_03_StringPalindrom",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
             "name": "Launch Ex001_stringsDemo",
             "request": "launch",
             "mainClass": "Ex001_stringsDemo",
