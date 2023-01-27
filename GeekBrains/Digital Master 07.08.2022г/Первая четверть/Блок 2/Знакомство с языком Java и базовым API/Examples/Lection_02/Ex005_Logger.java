@@ -18,7 +18,6 @@ public class Ex005_Logger {
         //logger.setLevel(Level.INFO);
         logger.log(Level.WARNING, "Тестовое логирование 1");
         logger.info("Тестовое логирование 2");
-
     }
 }
 

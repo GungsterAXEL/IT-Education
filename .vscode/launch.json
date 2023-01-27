@@ -3,6 +3,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex_04_CalcLogger",
+            "request": "launch",
+            "mainClass": "Homework.Ex_04_CalcLogger",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sem1",
+            "request": "launch",
+            "mainClass": "NEW.Sem1",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sem2",
+            "request": "launch",
+            "mainClass": "NEW.Sem2",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Sem2",
+            "request": "launch",
+            "mainClass": "Sem2",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex005_Logger",
+            "request": "launch",
+            "mainClass": "Ex005_Logger",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_02_BubbleSort",
+            "request": "launch",
+            "mainClass": "Homework.Ex_02_BubbleSort",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
             "name": "Launch Example_04_TestToFile",
             "request": "launch",
             "mainClass": "Example_04_TestToFile",
