@@ -3,6 +3,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex_01_DictionaryTest",
+            "request": "launch",
+            "mainClass": "Ex_01_DictionaryTest",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_06_Iterator",
+            "request": "launch",
+            "mainClass": "Example_06_Iterator",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_05_LestOf",
+            "request": "launch",
+            "mainClass": "Example_05_LestOf",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_04_ArraysMethod",
+            "request": "launch",
+            "mainClass": "Example_04_ArraysMethod",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_03_ArrayList",
+            "request": "launch",
+            "mainClass": "Example_03_ArrayList",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_01_SQLRequest",
+            "request": "launch",
+            "mainClass": "Homework.Ex_01_SQLRequest",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_02_Arrays",
+            "request": "launch",
+            "mainClass": "Example_02_Arrays",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_01_Object",
+            "request": "launch",
+            "mainClass": "Example_01_Object",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
             "name": "Launch Ex_04_CalcLogger",
             "request": "launch",
             "mainClass": "Homework.Ex_04_CalcLogger",

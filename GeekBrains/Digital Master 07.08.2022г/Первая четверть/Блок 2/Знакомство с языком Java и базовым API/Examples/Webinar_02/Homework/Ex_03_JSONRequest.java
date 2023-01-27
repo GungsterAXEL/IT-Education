@@ -14,6 +14,13 @@
  */
 package Homework;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Ex_03_JSONRequest {
+    Map<String,String> dictionary = new HashMap<String,String>();
+    String[][] str = [{"фамилия":"Иванов","оценка":"5","предмет":"Математика"},
+    {"фамилия":"Петрова","оценка":"4","предмет":"Информатика"},
+    {"фамилия":"Краснов","оценка":"5","предмет":"Физика"}];
     
 }
