@@ -3,6 +3,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Example_04_CatalogFiller",
+            "request": "launch",
+            "mainClass": "Example_04_CatalogFiller",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_03_IntEraser",
+            "request": "launch",
+            "mainClass": "Example_03_IntEraser",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_02_SolarSystem",
+            "request": "launch",
+            "mainClass": "Example_02_SolarSystem",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_01_ListSorting",
+            "request": "launch",
+            "mainClass": "Example_01_ListSorting",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_01_StringEquality",
+            "request": "launch",
+            "mainClass": "Example_01_StringEquality",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
             "name": "Launch Ex_01_DictionaryTest",
             "request": "launch",
             "mainClass": "Ex_01_DictionaryTest",
