@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -9,6 +8,7 @@ import java.util.List;
  * Поместить в него как строки, так и целые числа.
  * Пройти по списку, найти и удалить целые числа.
  */
+
 public class Example_03_IntEraser {
     public static void main(String[] args) {
         String[] items = { "ФЫАРЛОА", "5", "5.1", "фваощш" };

@@ -4,6 +4,7 @@
  * Выход abcd
  * charAt(i) и indefOf(s)
  */
+
 public class Example_02_StringCompressor {
     public static String StringCompressor(String a) {
         String res = "";

@@ -4,6 +4,7 @@
  * и метод, который запишет эту строку в простой текстовый файл,
  * обработайте исключения.
  */
+
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -21,7 +22,7 @@ public class Example_04_TestToFile {
             fw.close();
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
-        } 
+        }
     }
 
     public static void main(String[] args) {

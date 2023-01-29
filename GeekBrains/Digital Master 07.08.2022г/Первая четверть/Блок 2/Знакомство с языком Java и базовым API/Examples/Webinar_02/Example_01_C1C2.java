@@ -7,6 +7,7 @@
  * c2=”Vasya”
  * res = “OlegVasyaOlegVasyaOleg”
  */
+
 public class Example_01_C1C2 {
     public static void main(String[] args) {
         int n = 10;

@@ -3,6 +3,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex_03_JSONRequest",
+            "request": "launch",
+            "mainClass": "Homework.Ex_03_JSONRequest",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_01_MergeSort",
+            "request": "launch",
+            "mainClass": "Homework.Ex_01_MergeSort",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_03_MinMaxArithmeticMeanFinder",
+            "request": "launch",
+            "mainClass": "Homework.Ex_03_MinMaxArithmeticMeanFinder",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_03_MinMaxArithmeticMean",
+            "request": "launch",
+            "mainClass": "Homework.Ex_03_MinMaxArithmeticMean",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_02_EvenNumberEraser",
+            "request": "launch",
+            "mainClass": "Homework.Ex_02_EvenNumberEraser",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
             "name": "Launch Example_04_CatalogFiller",
             "request": "launch",
             "mainClass": "Example_04_CatalogFiller",

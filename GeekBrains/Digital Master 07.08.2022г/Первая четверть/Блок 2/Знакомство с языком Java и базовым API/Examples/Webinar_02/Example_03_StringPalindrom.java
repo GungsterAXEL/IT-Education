@@ -3,6 +3,7 @@
  * и определяет является ли строка палиндромом (возвращает boolean значение).
  * equals и StringBulder для revers
  */
+
 public class Example_03_StringPalindrom {
     public static void isPalindrom(String s){
         String reversed = new StringBuilder(s).reverse().toString();
