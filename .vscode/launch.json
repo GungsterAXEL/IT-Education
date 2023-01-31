@@ -3,6 +3,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Example_03_ArrayToStack",
+            "request": "launch",
+            "mainClass": "Example_03_ArrayToStack",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_03",
+            "request": "launch",
+            "mainClass": "Example_03",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_02_StringRevert",
+            "request": "launch",
+            "mainClass": "Example_02_StringRevert",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_01_TextNumList",
+            "request": "launch",
+            "mainClass": "Example_01_TextNumList",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_00",
+            "request": "launch",
+            "mainClass": "Example_00",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
             "name": "Launch Example_05_ReversedPolishNotationExtractor",
             "request": "launch",
             "mainClass": "Example_05_ReversedPolishNotationExtractor",
