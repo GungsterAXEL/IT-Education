@@ -3,6 +3,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Example_05_ReversedPolishNotationExtractor",
+            "request": "launch",
+            "mainClass": "Example_05_ReversedPolishNotationExtractor",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex004",
+            "request": "launch",
+            "mainClass": "Lesson_04.Ex004",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_01_LinkedList",
+            "request": "launch",
+            "mainClass": "Example_01_LinkedList",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_03_Deque",
+            "request": "launch",
+            "mainClass": "Example_03_Deque",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_02_PriorityQueue",
+            "request": "launch",
+            "mainClass": "Example_02_PriorityQueue",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
             "name": "Launch Ex_03_JSONRequest",
             "request": "launch",
             "mainClass": "Homework.Ex_03_JSONRequest",
