@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Example_02_HashMapEntry",
+            "request": "launch",
+            "mainClass": "Example_02_HashMapEntry",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_01_HashMap",
+            "request": "launch",
+            "mainClass": "Example_01_HashMap",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
             "name": "Launch Ex_03_BackstepCalc",
             "request": "launch",
             "mainClass": "Homework.Ex_03_BackstepCalc",
