@@ -3,6 +3,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex_03_BackstepCalc",
+            "request": "launch",
+            "mainClass": "Homework.Ex_03_BackstepCalc",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_02",
+            "request": "launch",
+            "mainClass": "Homework.Ex_02",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
             "name": "Launch Example_03_ArrayToStack",
             "request": "launch",
             "mainClass": "Example_03_ArrayToStack",
