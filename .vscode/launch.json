@@ -3,6 +3,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex_03_HeapSort",
+            "request": "launch",
+            "mainClass": "Homework.Ex_03_HeapSort",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_02_NameCounter",
+            "request": "launch",
+            "mainClass": "Homework.Ex_02_NameCounter",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_01_Phonebook",
+            "request": "launch",
+            "mainClass": "Homework.Ex_01_Phonebook",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
             "name": "Launch Example_02_HashMapEntry",
             "request": "launch",
             "mainClass": "Example_02_HashMapEntry",
