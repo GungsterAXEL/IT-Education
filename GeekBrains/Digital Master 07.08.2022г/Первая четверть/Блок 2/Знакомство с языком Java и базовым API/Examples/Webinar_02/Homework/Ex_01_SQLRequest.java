@@ -9,7 +9,7 @@
  * Результат "select * from students where “name” = “Ivanov” and “country” = ”Russia” …
  */
 
-package Homework;
+package Webinar_02.Homework;
 
 public class Ex_01_SQLRequest {
     public static StringBuilder SQLRequest(StringBuilder sqlString, String str) {

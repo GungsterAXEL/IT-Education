@@ -13,7 +13,7 @@
  * Студент Краснов получил 5 по предмету Физика.
  */
 
-package Homework;
+package Webinar_02.Homework;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -6,7 +6,7 @@
  * Предложить хотя бы одно решение или сообщить, что его нет.
  * 24 45 //24 + 45 = 69 (n=2)
  */
-package Homework;
+package Webinar_01.Homework;
 
 public class Ex_04_WTFEquation {
     public static Integer lookingForUnknowns(String eq) {

@@ -1,3 +1,5 @@
+package Lection_04;
+
 import java.util.PriorityQueue;
 
 public class Example_02_PriorityQueue {

@@ -3,7 +3,7 @@
  * Реализуйте структуру телефонной книги с помощью HashMap, учитывая,
  * что 1 человек может иметь несколько телефонов.
  */
-package Homework;
+package Webinar_05.Homework;
 
 import java.util.Map;
 import java.util.Scanner;

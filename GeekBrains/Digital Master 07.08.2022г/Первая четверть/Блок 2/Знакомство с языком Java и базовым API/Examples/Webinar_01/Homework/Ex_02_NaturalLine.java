@@ -2,7 +2,7 @@
  *      Задача 2.
  *      Вывести все простые числа от 1 до 1000.
  */
-package Homework;
+package Webinar_01.Homework;
 
 public class Ex_02_NaturalLine {
     public static void main(String[] args) {

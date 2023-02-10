@@ -3,7 +3,7 @@
  * К калькулятору из предыдущего ДЗ добавить логирование.
  */
 
-package Homework;
+package Webinar_02.Homework;
 
 import java.io.File;
 import java.io.IOException;
@@ -38,7 +38,7 @@ public class Ex_04_CalcLogger {
     }
 
     public static void CalcLogger(String result) {
-        Logger logger = Logger.getLogger(Ex_02_BubbleSort.class.getName());
+        Logger logger = Logger.getLogger(Ex_04_CalcLogger.class.getName());
 
         String separator = File.separator;
         String filePath = String.join(separator, "GeekBrains", "Digital Master 07.08.2022г", "Первая четверть",

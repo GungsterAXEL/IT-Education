@@ -1,3 +1,5 @@
+package Lection_03;
+
 public class Example_02_Arrays {
     static int[] AddItem(int[] array, int item){
         int length = array.length;

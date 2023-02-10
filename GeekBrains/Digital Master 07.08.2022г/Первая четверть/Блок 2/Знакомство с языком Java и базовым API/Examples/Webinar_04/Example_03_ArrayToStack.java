@@ -1,3 +1,4 @@
+package Webinar_04;
 
 /**
  * Задача 3.

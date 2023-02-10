@@ -3,7 +3,7 @@
  *      Реализовать простой калькулятор (пользователь вводит 2 числа и вводит операцию (+ - / *).
  *      int a ; int b; String op (op!=”Stop”); (char != ’b’)
  */
-package Homework;
+package Webinar_01.Homework;
 
 import java.util.Scanner;
 

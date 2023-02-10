@@ -2,7 +2,7 @@
  * Задача 3.
  * Реализовать алгоритм пирамидальной сортировки (HeapSort).
  */
-package Homework;
+package Webinar_05.Homework;
 
 import java.util.Arrays;
 import java.util.Random;

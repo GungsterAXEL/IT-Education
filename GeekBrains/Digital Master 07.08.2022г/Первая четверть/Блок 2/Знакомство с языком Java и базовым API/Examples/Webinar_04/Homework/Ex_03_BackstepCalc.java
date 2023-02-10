@@ -3,7 +3,7 @@
  * В калькулятор добавьте возможность отменить последнюю операцию.
  */
 
-package Homework;
+package Webinar_04.Homework;
 
 import java.io.File;
 import java.io.IOException;
@@ -39,7 +39,7 @@ public class Ex_03_BackstepCalc {
     }
 
     public static void CalcLogger(String result) {
-        Logger logger = Logger.getLogger(Ex_02_BubbleSort.class.getName());
+        Logger logger = Logger.getLogger(Ex_03_BackstepCalc.class.getName());
 
         String separator = File.separator;
         String filePath = String.join(separator, "GeekBrains", "Digital Master 07.08.2022г", "Первая четверть",

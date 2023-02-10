@@ -1,3 +1,4 @@
+package Webinar_05;
 
 /**
  * Задача 0.

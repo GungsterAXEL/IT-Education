@@ -1,3 +1,5 @@
+package Lection_02;
+
 import java.io.*;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

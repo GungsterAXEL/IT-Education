@@ -1,3 +1,5 @@
+package Lection_02;
+
 import java.io.File;
 
 public class Ex002_fileSystemDemo {

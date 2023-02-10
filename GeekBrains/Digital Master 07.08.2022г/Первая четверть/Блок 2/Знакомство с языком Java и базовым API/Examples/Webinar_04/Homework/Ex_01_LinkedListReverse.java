@@ -4,7 +4,7 @@
  * Реализуйте метод, который вернет “перевернутый” список.
  */
 
-package Homework;
+package Webinar_04.Homework;
 
 import java.util.LinkedList;
 

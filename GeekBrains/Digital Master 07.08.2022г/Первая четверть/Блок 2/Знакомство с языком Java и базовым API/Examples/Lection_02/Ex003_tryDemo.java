@@ -1,3 +1,5 @@
+package Lection_02;
+
 import java.io.*;
 
 public class Ex003_tryDemo {

@@ -3,7 +3,7 @@
  *      Вычислить n-ое треугольного число(сумма чисел от 1 до n),
  *      n! (произведение чисел от 1 до n).
  */
-package Homework;
+package Webinar_01.Homework;
 
 import java.util.Scanner;
 

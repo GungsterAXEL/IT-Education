@@ -1,3 +1,5 @@
+package Lection_05;
+
 import java.util.*;
 
 public class Example_04_TreeMap {

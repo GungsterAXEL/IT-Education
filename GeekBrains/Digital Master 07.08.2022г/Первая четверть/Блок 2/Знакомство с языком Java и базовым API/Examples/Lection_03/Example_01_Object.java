@@ -1,3 +1,5 @@
+package Lection_03;
+
 public class Example_01_Object {
     private static void GetType(Object o) {
         System.out.println("Тип данных переменной " + o + " : " + o.getClass().getName()); // Вывод типа данных

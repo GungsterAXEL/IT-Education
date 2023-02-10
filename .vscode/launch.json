@@ -3,6 +3,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Ex_01_NotebookSort",
+            "request": "launch",
+            "mainClass": "Webinar_06.Homework.Ex_01_NotebookSort",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_01_NotebookFilter",
+            "request": "launch",
+            "mainClass": "Webinar_06.Homework.Ex_01_NotebookFilter",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex_04_QueenAttacks",
+            "request": "launch",
+            "mainClass": "Webinar_05.Homework.Ex_04_QueenAttacks",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_00",
+            "request": "launch",
+            "mainClass": "Webinar_06.Example_00",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Example_00",
+            "request": "launch",
+            "mainClass": "Webinar_05.Example_00",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
             "name": "Launch Ex_03_HeapSort",
             "request": "launch",
             "mainClass": "Homework.Ex_03_HeapSort",

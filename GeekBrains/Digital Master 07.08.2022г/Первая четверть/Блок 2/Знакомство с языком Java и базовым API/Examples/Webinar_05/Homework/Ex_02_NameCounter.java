@@ -4,7 +4,7 @@
  * Написать программу, которая найдёт и выведет повторяющиеся имена с количеством повторений.
  * Отсортировать по убыванию популярности.
  */
-package Homework;
+package Webinar_05.Homework;
 
 import java.util.Map;
 import java.util.List;

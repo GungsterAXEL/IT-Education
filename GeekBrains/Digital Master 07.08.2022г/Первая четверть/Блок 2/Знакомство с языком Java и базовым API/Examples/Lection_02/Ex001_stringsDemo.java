@@ -1,3 +1,5 @@
+package Lection_02;
+
 public class Ex001_stringsDemo {
     public static void main(String[] args) {
         String[] name = { "C", "е", "р", "г", "е", "й" };

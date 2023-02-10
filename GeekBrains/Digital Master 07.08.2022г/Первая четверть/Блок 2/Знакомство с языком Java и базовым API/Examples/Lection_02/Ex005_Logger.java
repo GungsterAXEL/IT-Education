@@ -1,3 +1,5 @@
+package Lection_02;
+
 import java.io.IOException;
 import java.util.logging.*;
 

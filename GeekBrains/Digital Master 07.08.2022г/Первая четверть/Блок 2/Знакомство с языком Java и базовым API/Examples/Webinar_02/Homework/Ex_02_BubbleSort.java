@@ -4,7 +4,7 @@
  * результат после каждой итерации запишите в лог-файл.
  */
 
-package Homework;
+package Webinar_02.Homework;
 
 import java.io.File;
 import java.io.IOException;

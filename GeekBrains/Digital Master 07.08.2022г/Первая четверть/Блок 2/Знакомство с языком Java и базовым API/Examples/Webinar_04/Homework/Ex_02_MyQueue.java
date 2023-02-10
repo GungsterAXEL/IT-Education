@@ -6,7 +6,7 @@
  * first() - возвращает первый элемент из очереди, не удаляя.
  */
 
-package Homework;
+package Webinar_04.Homework;
 
 import java.util.LinkedList;
 import java.util.Random;

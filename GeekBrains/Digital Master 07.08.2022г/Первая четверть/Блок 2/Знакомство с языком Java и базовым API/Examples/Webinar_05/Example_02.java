@@ -1,8 +1,8 @@
+package Webinar_05;
+
 import java.util.Map;
 import java.util.Stack;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 /**
  * Задача 2.

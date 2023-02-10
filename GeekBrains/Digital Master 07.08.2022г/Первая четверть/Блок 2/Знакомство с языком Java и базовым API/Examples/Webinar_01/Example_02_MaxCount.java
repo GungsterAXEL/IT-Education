@@ -1,9 +1,12 @@
+package Webinar_01;
+
 /**
  * Дан массив двоичных чисел, например [1,1,0,1,1,1,1],
  * вывести максимальное количество подряд идущих 1.
  * Найти максимальное количество подряд идущих одинаковых элементов массива.
  * (постараться сделать с одним циклом)
  */
+
 public class Example_02_MaxCount {
     public static void main(String[] args) {
         int[] arr = new int[] { 1, 1, 0, 1, 1, 1, 1 };
@@ -13,7 +16,7 @@ public class Example_02_MaxCount {
                 count++;
                 if (maxCount < count)
                     maxCount = count;
-            } else 
+            } else
                 count = 0;
         }
         System.out.println(maxCount);
