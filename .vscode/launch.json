@@ -3,6 +3,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Program",
+            "request": "launch",
+            "mainClass": "Webinar_01.Homework.Program",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program",
+            "request": "launch",
+            "mainClass": "Webinar_01.Example_02.Program",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program",
+            "request": "launch",
+            "mainClass": "Webinar_01.Example_01.Program",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program",
+            "request": "launch",
+            "mainClass": "Lection_01.Example_03.Program",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program",
+            "request": "launch",
+            "mainClass": "Lection_01.Example_02.Program",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch PointMethod",
+            "request": "launch",
+            "mainClass": "Lection_01.Example_01.PointMethod",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
             "name": "Launch Ex_01_NotebookSort",
             "request": "launch",
             "mainClass": "Webinar_06.Homework.Ex_01_NotebookSort",
