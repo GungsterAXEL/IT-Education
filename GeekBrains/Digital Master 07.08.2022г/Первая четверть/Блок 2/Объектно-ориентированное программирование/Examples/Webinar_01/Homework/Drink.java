@@ -1,9 +1,9 @@
 package Webinar_01.Homework;
 
 public class Drink extends Product {
-    protected double volume;
+    private double volume;
 
-    Drink(String name, int price, double volume) {
+    public Drink(String name, int price, double volume) {
         super(name, price);
         this.volume = volume;
     }
@@ -14,6 +14,11 @@ public class Drink extends Product {
 
     public void setVolume(double volume) {
         this.volume = volume;
+    }
+
+    
+    public void consume(Drink drink) {
+        System.out.printf("Напиток %s выпит.\n", drink.getName());
     }
 
 }

@@ -28,10 +28,6 @@ public class VendingMachine {
     // this.goods = goods;
     // }
 
-    protected void startOS() {
-        System.out.println("System loading...");
-    }
-
     protected void printTable(String left, String right) {
         System.out.printf("| %-10s | %-5s |\n", left, right);
     }
@@ -47,6 +43,10 @@ public class VendingMachine {
             System.out.println();
         } else
             System.out.println("Весь товар закончился! =D\nПриходите когда пополним.");
+    }
+
+    public void startOS() {
+        System.out.println("System loading...");
     }
 
     public void powerOn() {

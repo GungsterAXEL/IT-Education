@@ -3,6 +3,9 @@ package Lection_02.Example_06.Applications;
 import java.util.ArrayList;
 import java.util.List;
 
+import Lection_02.Example_06.Document.TextDocument;
+import Lection_02.Example_06.Format.TextFormat;
+
 public class Notepad {
     private List<TextDocument> documents;
     private int index;

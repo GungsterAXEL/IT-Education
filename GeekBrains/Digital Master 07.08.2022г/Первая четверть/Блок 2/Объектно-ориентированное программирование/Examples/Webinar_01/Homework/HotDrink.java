@@ -1,7 +1,7 @@
 package Webinar_01.Homework;
 
 public class HotDrink extends Drink {
-    protected double temperature;
+    private double temperature;
 
     public HotDrink(String name, int price, double volume, double temperature) {
         super(name, price, volume);
@@ -16,4 +16,7 @@ public class HotDrink extends Drink {
         this.temperature = temperature;
     }
 
+    public void consume(HotDrink hotDrink) {
+        System.out.printf("Пусть %s не остынет.\n", hotDrink.getName());
+    }
 }

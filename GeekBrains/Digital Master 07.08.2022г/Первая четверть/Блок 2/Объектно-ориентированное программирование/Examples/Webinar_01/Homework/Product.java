@@ -1,10 +1,10 @@
 package Webinar_01.Homework;
 
 public class Product {
-    protected String name;
-    protected int price;
+    private String name;
+    private int price;
 
-    Product(String name, int price) {
+    public Product(String name, int price) {
         this.name = name;
         this.price = price;
     }
@@ -24,5 +24,9 @@ public class Product {
     public void setPrice(int price) {
         this.price = price;
     }
-    public void consume(){System.out.println("Продукт потреблён.");}
+
+    public void consume(Product product) {
+        System.out.printf("Продукт %s потреблён.\n", product.getName());
+    }
+
 }

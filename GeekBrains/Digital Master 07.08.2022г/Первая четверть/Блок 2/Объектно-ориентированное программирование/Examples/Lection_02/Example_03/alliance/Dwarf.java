@@ -1,5 +1,7 @@
 package Lection_02.Example_03.alliance;
 
+import Lection_02.Example_03.Druid;
+
 public class Dwarf extends Druid {
     
     public Dwarf() {

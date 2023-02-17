@@ -3,32 +3,34 @@ package Webinar_01.Homework;
 import java.util.ArrayList;
 
 public class VendingMachine {
-    protected ArrayList<Product> goods;
+    private ArrayList<Product> goods;
 
     public VendingMachine(ArrayList<Product> goods) {
+        this.goods = goods;
+    }
+
+    public ArrayList<Product> getGoods() {
+        return goods;
+    }
+
+    public void setGoods(ArrayList<Product> goods) {
         this.goods = goods;
     }
 
     public Product getProduct(String name) {
         for (Product product : this.goods) {
             if (product.getName().equals(name)) {
-                Product temp = product;
-                this.goods.remove(product);
-                return temp;
+                return product;
             }
         }
         return null;
-    }
-
-    public ArrayList<Product> getGoods() {
-        return this.goods;
     }
 
     protected void printTable(String left, String right) {
         System.out.printf("| %-10s | %-5s |\n", left, right);
     }
 
-    protected void menu() {
+    public void menu() {
         if (!this.goods.isEmpty()) {
             System.out.println("\nВыберите ништячки:");
             printTable("Товар", "Цена");
@@ -53,4 +55,5 @@ public class VendingMachine {
     protected void powerOff() {
         System.out.println("Sya!");
     }
+
 }
