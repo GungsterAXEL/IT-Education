@@ -1,18 +1,19 @@
-package Webinar_02.Example_01.animals;
+package Webinar_02.animal;
 
 public class Lion extends Animal {
-    protected int maneVolume;
 
-    protected static final int MAX_WEIGHT = 500;
-    protected static final String TYPE = "Лев";
+    private int maneVolume;
 
-    public Lion(int birthYear, int weight, int limbCount, int maneVolume) {
-        super(birthYear, weight, limbCount);
+    private static final int MAX_WEIGHT = 500;
+    private static final String TYPE = "Лев";
+
+    public Lion(int birthYear, int weight, int limbsCount, int maneVolume) {
+        super(birthYear, weight, limbsCount);
         this.maneVolume = maneVolume;
     }
 
     public int getManeVolume() {
-        return this.maneVolume;
+        return maneVolume;
     }
 
     public void setManeVolume(int maneVolume) {
@@ -28,5 +29,4 @@ public class Lion extends Animal {
     public int getMaxWeight() {
         return MAX_WEIGHT;
     }
-
 }

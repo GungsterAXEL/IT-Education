@@ -5,6 +5,13 @@
             "type": "java",
             "name": "Launch Program",
             "request": "launch",
+            "mainClass": "Webinar_02.Program",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program",
+            "request": "launch",
             "mainClass": "Webinar_01.Homework.Program",
             "projectName": "IT-Education_a5afa9d9"
         },
