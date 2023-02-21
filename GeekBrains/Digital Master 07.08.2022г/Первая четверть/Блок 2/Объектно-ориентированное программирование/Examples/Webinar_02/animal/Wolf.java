@@ -1,6 +1,6 @@
 package Webinar_02.animal;
 
-public class Wolf extends Animal {
+public class Wolf extends Animal implements Comparable<Wolf> {
     private static final int MAX_WEIGHT = 100;
     private static final String TYPE = "Волк";
 
@@ -16,5 +16,14 @@ public class Wolf extends Animal {
     @Override
     public int getMaxWeight() {
         return MAX_WEIGHT;
+    }
+
+    @Override
+    public int compareTo(Wolf o) {
+        if (this.getBirthYear() > o.getBirthYear())
+            return 1;
+        else if (this.getBirthYear() < o.getBirthYear())
+            return -1;
+        return 0;
     }
 }

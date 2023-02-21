@@ -1,12 +1,17 @@
 package Webinar_02.cage;
 
-import java.util.ArrayList;
 import java.util.Random;
+import java.util.Iterator;
+import java.util.ArrayList;
+import java.util.Collections;
 
-import Webinar_02.animal.Animal;
 import Webinar_02.animal.Lion;
+import Webinar_02.animal.Animal;
+import Webinar_02.iterator.LionIterator;
+import Webinar_02.comparator.LionComparator;
 
-public class LionCage implements AnimalCage {
+public class LionCage implements AnimalCage, Iterable<Lion> {
+
     private int garbageVolume;
     private ArrayList<Lion> lions;
 
@@ -29,6 +34,36 @@ public class LionCage implements AnimalCage {
 
     public void setLions(ArrayList<Lion> lions) {
         this.lions = lions;
+    }
+
+    // Реализация сортировки через Comparable<E>.
+    public void sortLions() {
+        Collections.sort(this.lions);
+    }
+
+    // Реализация сортировки через Comparator<E>.
+    public void sortLionsByMane() {
+        Collections.sort(this.lions, new LionComparator());
+    }
+
+    // Удаление с помощью итератора.
+    public void removeByBirthYear(int input) {
+        Iterator<Lion> lionIterator = this.lions.iterator();
+        while (lionIterator.hasNext()) {
+            Lion lion = lionIterator.next();
+            if (lion.getBirthYear() == input)
+                lionIterator.remove();
+        }
+    }
+
+    // Удаление львов старше определённого возраста.
+    public void deleteLionOlderThan(int limitAge) {
+        Iterator<Lion> lionIterator = this.lions.iterator();
+        while (lionIterator.hasNext()) {
+            Lion lion = lionIterator.next();
+            if (lion.getBirthYear() > limitAge)
+                lionIterator.remove();
+        }
     }
 
     @Override
@@ -55,7 +90,10 @@ public class LionCage implements AnimalCage {
     @Override
     public void checkStatus() {
         this.lions.forEach(lion -> System.out
-                .println(lion.getType() + " Вес: " + lion.getWeight() + " Грива: " + lion.getManeVolume()));
+                .println(lion.getType() + ": " + (this.lions.indexOf(lion) + 1)
+                        + " Вес: " + lion.getWeight()
+                        + " Грива: " + lion.getManeVolume()
+                        + " Год рождения: " + lion.getBirthYear()));
         System.out.println("Загрязнения: " + this.garbageVolume);
     }
 
@@ -72,6 +110,11 @@ public class LionCage implements AnimalCage {
     @Override
     public int animalsCount() {
         return this.lions.size();
+    }
+
+    @Override
+    public Iterator<Lion> iterator() {
+        return new LionIterator(this.lions);
     }
 
 }

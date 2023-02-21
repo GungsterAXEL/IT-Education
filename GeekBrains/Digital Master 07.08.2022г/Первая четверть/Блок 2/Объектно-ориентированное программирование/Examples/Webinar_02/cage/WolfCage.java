@@ -1,12 +1,16 @@
 package Webinar_02.cage;
 
 import java.util.Random;
+import java.util.Iterator;
 import java.util.ArrayList;
+import java.util.Collections;
 
 import Webinar_02.animal.Wolf;
 import Webinar_02.animal.Animal;
+import Webinar_02.iterator.WolfIterator;
+import Webinar_02.comparator.WolfComparator;
 
-public class WolfCage implements AnimalCage {
+public class WolfCage implements AnimalCage, Iterable<Wolf> {
 
     private int garbageVolume;
     private ArrayList<Wolf> wolfs;
@@ -32,6 +36,32 @@ public class WolfCage implements AnimalCage {
         this.wolfs = wolfs;
     }
 
+    public void sortWolfs() {
+        Collections.sort(this.wolfs);
+    }
+
+    public void sortWolfsByWeightAndBirthYear() {
+        Collections.sort(this.wolfs, new WolfComparator());
+    }
+
+    public void removeByBirthYear(int input) {
+        Iterator<Wolf> wolfIterator = this.wolfs.iterator();
+        while (wolfIterator.hasNext()) {
+            Wolf wolf = wolfIterator.next();
+            if (wolf.getBirthYear() == input)
+                wolfIterator.remove();
+        }
+    }
+
+    public void deleteWolfOlderThan(int limitAge) {
+        Iterator<Wolf> wolfIterator = this.wolfs.iterator();
+        while (wolfIterator.hasNext()) {
+            Wolf wolf = wolfIterator.next();
+            if (wolf.getBirthYear() > limitAge)
+                wolfIterator.remove();
+        }
+    }
+
     @Override
     public void addAnimal(Animal wolf) {
         if (wolf instanceof Wolf)
@@ -55,7 +85,9 @@ public class WolfCage implements AnimalCage {
 
     @Override
     public void checkStatus() {
-        this.wolfs.forEach(wolf -> System.out.println(wolf.getType() + " Вес: " + wolf.getWeight()));
+        this.wolfs.forEach(wolf -> System.out.println(wolf.getType() + ": " + (this.wolfs.indexOf(wolf) + 1)
+                + " Вес: " + wolf.getWeight()
+                + " Год рождения: " + wolf.getBirthYear()));
         System.out.println("Загрязнения: " + this.garbageVolume);
     }
 
@@ -72,6 +104,11 @@ public class WolfCage implements AnimalCage {
     @Override
     public int animalsCount() {
         return this.wolfs.size();
+    }
+
+    @Override
+    public Iterator<Wolf> iterator() {
+        return new WolfIterator(this.wolfs);
     }
 
 }
