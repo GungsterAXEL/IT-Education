@@ -5,6 +5,27 @@
             "type": "java",
             "name": "Launch Program",
             "request": "launch",
+            "mainClass": "Webinar_01.HWReboot.Program",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program",
+            "request": "launch",
+            "mainClass": "Webinar_02_03_04.Program",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Ex002_Game",
+            "request": "launch",
+            "mainClass": "Lection_04.Example_07.Ex002_Game",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program",
+            "request": "launch",
             "mainClass": "Webinar_02.Program",
             "projectName": "IT-Education_a5afa9d9"
         },
