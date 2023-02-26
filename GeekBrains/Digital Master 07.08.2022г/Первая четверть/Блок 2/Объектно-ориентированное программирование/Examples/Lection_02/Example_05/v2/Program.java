@@ -3,6 +3,13 @@ package Lection_02.Example_05.v2;
 import java.util.ArrayList;
 import java.util.List;
 
+import Lection_02.Example_05.v2.Healers.Druid;
+import Lection_02.Example_05.v2.Healers.Healer;
+import Lection_02.Example_05.v2.Healers.Shaman;
+import Lection_02.Example_05.v2.Warriors.Knight;
+import Lection_02.Example_05.v2.Warriors.Paladin;
+import Lection_02.Example_05.v2.Warriors.Warrior;
+
 public class Program {
     public static void main(String[] args) {
         

@@ -1,5 +1,10 @@
 package Lection_02.Example_06;
 
+import Lection_02.Example_06.Applications.Notepad;
+import Lection_02.Example_06.Format.Doc;
+import Lection_02.Example_06.Format.Md;
+import Lection_02.Example_06.Format.Txt;
+
 public class Program {
     public static void main(String[] args) {
         
