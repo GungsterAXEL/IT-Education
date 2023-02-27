@@ -3,11 +3,10 @@ package Webinar_01.HWReboot.vendingMachine;
 import java.util.List;
 
 import Webinar_01.HWReboot.product.Snack;
-import Webinar_01.HWReboot.product.Product;
 
-public class SnackVendingMachine<S extends Snack> implements VendingMachineInterface<Snack> {
+public class SnackVendingMachine<S extends Snack> implements VendingMachineInterface<S> {
 
-    List<S> snackBox;
+    private List<S> snackBox;
 
     public SnackVendingMachine(List<S> snackBox) {
         this.snackBox = snackBox;
@@ -56,7 +55,7 @@ public class SnackVendingMachine<S extends Snack> implements VendingMachineInter
     }
 
     @Override
-    public void printRow(Snack snack) {
+    public void printRow(S snack) {
         System.out.printf("| %10s | %10s |\n", snack.getName(), snack.getPrice());
     }
 

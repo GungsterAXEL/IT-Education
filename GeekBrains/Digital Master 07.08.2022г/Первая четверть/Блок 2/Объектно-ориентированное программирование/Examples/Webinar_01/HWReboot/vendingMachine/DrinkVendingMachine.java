@@ -4,7 +4,7 @@ import java.util.List;
 
 import Webinar_01.HWReboot.product.Drink;
 
-public class DrinkVendingMachine<D extends Drink> implements VendingMachineInterface<Drink> {
+public class DrinkVendingMachine<D extends Drink> implements VendingMachineInterface<D> {
 
     List<D> drinkBox;
 
@@ -65,7 +65,7 @@ public class DrinkVendingMachine<D extends Drink> implements VendingMachineInter
     }
 
     @Override
-    public void printRow(Drink drink) {
+    public void printRow(D drink) {
         System.out.printf("| %10s | %10s | %10s |\n", drink.getName(), drink.getVolume(), drink.getPrice());
     }
 
