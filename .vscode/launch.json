@@ -5,6 +5,13 @@
             "type": "java",
             "name": "Launch Program",
             "request": "launch",
+            "mainClass": "Lection_05.Example_02_Phonebook.Client.Program",
+            "projectName": "IT-Education_a5afa9d9"
+        },
+        {
+            "type": "java",
+            "name": "Launch Program",
+            "request": "launch",
             "mainClass": "Webinar_01.HWReboot.Program",
             "projectName": "IT-Education_a5afa9d9"
         },
