@@ -1,10 +1,10 @@
-package Webinar_02_03_04.animalUtils;
+package Webinar_02_03_04_05.animalUtils;
 
 import java.util.List;
 import java.util.Collections;
 
-import Webinar_02_03_04.animal.Animal;
-import Webinar_02_03_04.animal.comparator.AnimalAgeComparator;
+import Webinar_02_03_04_05.animal.Animal;
+import Webinar_02_03_04_05.animal.comparator.AnimalAgeComparator;
 
 public class AnimalUtils {
 

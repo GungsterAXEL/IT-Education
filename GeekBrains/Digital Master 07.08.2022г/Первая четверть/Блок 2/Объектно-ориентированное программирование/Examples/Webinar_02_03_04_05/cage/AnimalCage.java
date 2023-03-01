@@ -1,10 +1,10 @@
-package Webinar_02_03_04.cage;
+package Webinar_02_03_04_05.cage;
 
 import java.util.List;
 import java.util.Collections;
 
-import Webinar_02_03_04.animal.Animal;
-import Webinar_02_03_04.animal.comparator.AnimalAgeComparator;
+import Webinar_02_03_04_05.animal.Animal;
+import Webinar_02_03_04_05.animal.comparator.AnimalAgeComparator;
 
 public interface AnimalCage<T extends Animal> {
 
@@ -16,7 +16,7 @@ public interface AnimalCage<T extends Animal> {
 
     void checkStatus();
 
-    void getRandomAnimal();
+    T getRandomAnimal();
 
     int animalsCount();
 

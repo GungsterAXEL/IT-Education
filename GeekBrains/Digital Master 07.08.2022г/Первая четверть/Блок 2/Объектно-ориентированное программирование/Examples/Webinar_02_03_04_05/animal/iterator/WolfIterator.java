@@ -1,8 +1,8 @@
-package Webinar_02_03_04.animal.iterator;
+package Webinar_02_03_04_05.animal.iterator;
 
 import java.util.Iterator;
 
-import Webinar_02_03_04.animal.Wolf;
+import Webinar_02_03_04_05.animal.Wolf;
 
 import java.util.ArrayList;
 

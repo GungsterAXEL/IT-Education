@@ -1,8 +1,8 @@
-package Webinar_02_03_04.animal.comparator;
+package Webinar_02_03_04_05.animal.comparator;
 
 import java.util.Comparator;
 
-import Webinar_02_03_04.animal.Lion;
+import Webinar_02_03_04_05.animal.Lion;
 
 public class LionComparator implements Comparator<Lion> {
 

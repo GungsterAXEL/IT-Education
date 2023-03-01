@@ -1,9 +1,9 @@
-package Webinar_02_03_04.cage;
+package Webinar_02_03_04_05.cage;
 
 import java.util.List;
 import java.util.Random;
 
-import Webinar_02_03_04.animal.Snake;
+import Webinar_02_03_04_05.animal.Snake;
 
 public class SnakeTerrarium implements AnimalCage<Snake> {
     private int garbageVolume;
@@ -61,13 +61,14 @@ public class SnakeTerrarium implements AnimalCage<Snake> {
     }
 
     @Override
-    public void getRandomAnimal() {
+    public Snake getRandomAnimal() {
         Random random = new Random();
         Snake temp = this.snakes.remove(random.nextInt(snakes.size()));
         System.out.println("Животное " + temp.getType() + " убрано из клетки.");
         System.out.println("Вес: " + temp.getWeight()
                 + " Длинна: " + temp.getBodyLength()
                 + " Год рождения: " + temp.getBirthYear());
+        return temp;
     }
 
     @Override

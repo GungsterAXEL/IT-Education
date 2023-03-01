@@ -1,8 +1,8 @@
-package Webinar_02_03_04.factory;
+package Webinar_02_03_04_05.factory;
 
 import java.util.Random;
 
-import Webinar_02_03_04.animal.Wolf;
+import Webinar_02_03_04_05.animal.Wolf;
 
 import java.util.ArrayList;
 

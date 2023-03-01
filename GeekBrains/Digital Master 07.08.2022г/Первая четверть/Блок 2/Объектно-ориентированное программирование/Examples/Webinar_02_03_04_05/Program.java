@@ -1,17 +1,13 @@
-package Webinar_02_03_04;
+package Webinar_02_03_04_05;
 
 import java.util.Scanner;
 
-import Webinar_02_03_04.animal.Lion;
-import Webinar_02_03_04.animal.Wolf;
-import Webinar_02_03_04.cage.LionCage;
-import Webinar_02_03_04.cage.WolfCage;
-import Webinar_02_03_04.factory.LionsFactory;
-import Webinar_02_03_04.factory.WolfFactory;
-import Webinar_02_03_04.animalUtils.*;
+import Webinar_02_03_04_05.animal.Wolf;
+import Webinar_02_03_04_05.cage.WolfCage;
+import Webinar_02_03_04_05.factory.WolfFactory;
+import Webinar_02_03_04_05.animalUtils.*;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Program {
     public static void main(String[] args) {

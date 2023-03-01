@@ -1,10 +1,10 @@
-package Webinar_02_03_04.cage;
+package Webinar_02_03_04_05.cage;
 
 import java.util.Random;
 
-import Webinar_02_03_04.animal.Wolf;
-import Webinar_02_03_04.animal.comparator.WolfComparator;
-import Webinar_02_03_04.animal.iterator.WolfIterator;
+import Webinar_02_03_04_05.animal.Wolf;
+import Webinar_02_03_04_05.animal.comparator.WolfComparator;
+import Webinar_02_03_04_05.animal.iterator.WolfIterator;
 
 import java.util.Iterator;
 import java.util.ArrayList;
@@ -91,13 +91,14 @@ public class WolfCage implements AnimalCage<Wolf>, Iterable<Wolf> {
     }
 
     @Override
-    public void getRandomAnimal() {
+    public Wolf getRandomAnimal() {
         Random random = new Random();
         Wolf temp = this.wolfs.remove(random.nextInt(wolfs.size()));
         System.out.println("Животное " + temp.getType() + " убрано из клетки.");
         System.out.println("Вес: " + temp.getWeight()
                 + " Количество конечностей: " + temp.getLimbsCount()
                 + " Год рождения: " + temp.getBirthYear());
+        return temp;
     }
 
     @Override

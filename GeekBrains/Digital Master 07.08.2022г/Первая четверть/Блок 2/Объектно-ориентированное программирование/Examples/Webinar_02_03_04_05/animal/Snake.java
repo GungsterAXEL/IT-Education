@@ -1,4 +1,4 @@
-package Webinar_02_03_04.animal;
+package Webinar_02_03_04_05.animal;
 
 public class Snake extends Animal {
 

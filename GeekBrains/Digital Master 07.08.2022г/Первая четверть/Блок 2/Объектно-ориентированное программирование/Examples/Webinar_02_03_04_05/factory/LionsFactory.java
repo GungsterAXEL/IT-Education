@@ -1,10 +1,10 @@
-package Webinar_02_03_04.factory;
+package Webinar_02_03_04_05.factory;
 
 import java.util.List;
 import java.util.Random;
 import java.util.ArrayList;
 
-import Webinar_02_03_04.animal.Lion;
+import Webinar_02_03_04_05.animal.Lion;
 
 public class LionsFactory {
 

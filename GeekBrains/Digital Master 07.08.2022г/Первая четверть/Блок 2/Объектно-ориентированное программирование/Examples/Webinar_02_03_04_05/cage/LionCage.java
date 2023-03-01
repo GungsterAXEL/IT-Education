@@ -1,10 +1,10 @@
-package Webinar_02_03_04.cage;
+package Webinar_02_03_04_05.cage;
 
 import java.util.Random;
 
-import Webinar_02_03_04.animal.Lion;
-import Webinar_02_03_04.animal.comparator.LionComparator;
-import Webinar_02_03_04.animal.iterator.LionIterator;
+import Webinar_02_03_04_05.animal.Lion;
+import Webinar_02_03_04_05.animal.comparator.LionComparator;
+import Webinar_02_03_04_05.animal.iterator.LionIterator;
 
 import java.util.Iterator;
 import java.util.ArrayList;
@@ -97,13 +97,14 @@ public class LionCage implements AnimalCage<Lion>, Iterable<Lion> {
     }
 
     @Override
-    public void getRandomAnimal() {
+    public Lion getRandomAnimal() {
         Random random = new Random();
         Lion temp = this.lions.remove(random.nextInt(lions.size()));
         System.out.println("Животное " + temp.getType() + " убрано из клетки.");
         System.out.println("Вес: " + temp.getWeight()
                 + " Количество конечностей: " + temp.getLimbsCount()
                 + " Год рождения: " + temp.getBirthYear());
+        return temp;
     }
 
     @Override
