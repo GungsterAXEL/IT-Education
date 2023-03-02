@@ -10,7 +10,6 @@ public class TerminalReader {
     private CommandParser commandParser;
 
     private TerminalReader() {
-//        this.commandParser = commandParser;
     }
 
     public static TerminalReader getTerminal() {
