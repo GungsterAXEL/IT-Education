@@ -1,14 +1,13 @@
 package Webinar_02_03_04_05.cage;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
 import java.util.Random;
 
 import Webinar_02_03_04_05.animal.Lion;
 import Webinar_02_03_04_05.animal.comparator.LionComparator;
 import Webinar_02_03_04_05.animal.iterator.LionIterator;
-
-import java.util.Iterator;
-import java.util.ArrayList;
-import java.util.Collections;
 
 public class LionCage implements AnimalCage<Lion>, Iterable<Lion> {
 

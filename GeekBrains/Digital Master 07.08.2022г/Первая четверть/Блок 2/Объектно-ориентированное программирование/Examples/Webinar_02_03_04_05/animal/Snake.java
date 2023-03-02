@@ -1,6 +1,6 @@
 package Webinar_02_03_04_05.animal;
 
-public class Snake extends Animal {
+public class Snake extends Animal implements Comparable<Snake>{
 
     private int bodyLength;
 
@@ -30,4 +30,12 @@ public class Snake extends Animal {
         return MAX_WEIGHT;
     }
 
+    @Override
+    public int compareTo(Snake o) {
+        if (this.getBirthYear() > o.getBirthYear())
+            return 1;
+        else if (this.getBirthYear() < o.getBirthYear())
+            return -1;
+        return 0;
+    }
 }

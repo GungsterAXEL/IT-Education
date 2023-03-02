@@ -3,7 +3,10 @@ package Webinar_02_03_04_05.zoo;
 import Webinar_02_03_04_05.animal.Wolf;
 import Webinar_02_03_04_05.animal.Lion;
 import Webinar_02_03_04_05.animal.Snake;
+import Webinar_02_03_04_05.animal.iterator.LionIterator;
 import Webinar_02_03_04_05.cage.AnimalCage;
+
+import java.util.Iterator;
 
 public class Zoo {
 
@@ -41,12 +44,43 @@ public class Zoo {
         this.snakeTerrarium = snakeTerrarium;
     }
 
+    /*
+     * Добавление-удаление животных в клетку.
+     */
     public Lion deleteLion() {
         return this.getLionCage().getRandomAnimal();
     }
 
     public void createLion(Lion lion) {
         this.getLionCage().addAnimal(lion);
+    }
+
+    public Wolf deleteWolf() {
+        return this.getWolfCage().getRandomAnimal();
+    }
+
+    public void createWolf(Wolf wolf) {
+        this.getWolfCage().addAnimal(wolf);
+    }
+
+    public Snake deleteSnake() {
+        return this.getSnakeTerrarium().getRandomAnimal();
+    }
+
+    public void createSnake(Snake snake) {
+        this.getSnakeTerrarium().addAnimal(snake);
+    }
+
+    /*
+     * Проверка информации о зоопарке.
+     */
+    public void checkInfo() {
+        this.lionCage.checkStatus();
+        System.out.println("---------------");
+        this.wolfCage.checkStatus();
+        System.out.println("---------------");
+        this.snakeTerrarium.checkStatus();
+        System.out.println("---------------");
     }
 
 }

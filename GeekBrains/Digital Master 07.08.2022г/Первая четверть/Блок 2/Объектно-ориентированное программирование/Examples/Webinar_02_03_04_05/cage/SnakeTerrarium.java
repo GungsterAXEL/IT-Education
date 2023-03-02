@@ -1,15 +1,15 @@
 package Webinar_02_03_04_05.cage;
 
-import java.util.List;
+import java.util.ArrayList;
 import java.util.Random;
 
 import Webinar_02_03_04_05.animal.Snake;
 
 public class SnakeTerrarium implements AnimalCage<Snake> {
     private int garbageVolume;
-    private List<Snake> snakes;
+    private ArrayList<Snake> snakes;
 
-    public SnakeTerrarium(int garbageVolume, List<Snake> snakes) {
+    public SnakeTerrarium(int garbageVolume, ArrayList<Snake> snakes) {
         this.garbageVolume = garbageVolume;
         this.snakes = snakes;
     }
@@ -22,11 +22,11 @@ public class SnakeTerrarium implements AnimalCage<Snake> {
         this.garbageVolume = garbageVolume;
     }
 
-    public List<Snake> getSnakes() {
+    public ArrayList<Snake> getSnakes() {
         return snakes;
     }
 
-    public void setSnakes(List<Snake> snakes) {
+    public void setSnakes(ArrayList<Snake> snakes) {
         this.snakes = snakes;
     }
 

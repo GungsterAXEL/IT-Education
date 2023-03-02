@@ -8,9 +8,9 @@ import Webinar_02_03_04_05.animal.Lion;
 
 public class LionsFactory {
 
-    public static List<Lion> createLions(int lionCount) {
+    public static ArrayList<Lion> createLions(int lionCount) {
         Random random = new Random();
-        List<Lion> lions = new ArrayList<>();
+        ArrayList<Lion> lions = new ArrayList<>();
         for (int i = 0; i < lionCount; i++) {
             lions.add(new Lion(random.nextInt(2000, 2024), 0, 4, random.nextInt(10)));
         }
