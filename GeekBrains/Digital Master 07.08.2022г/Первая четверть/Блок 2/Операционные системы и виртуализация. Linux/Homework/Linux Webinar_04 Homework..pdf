@@ -1,0 +1,58 @@
+-----------------------------------------------------------------------------------------------------------
+ДЗ.
+
+Задание:
+1. Подключить дополнительный репозиторий на выбор: Docker, Nginx, Oracle MySQL. Установить любой пакет из этого репозитория.
+2. Установить и удалить deb-пакет с помощью dpkg.
+3. Установить и удалить snap-пакет.
+4. Добавить задачу для выполнения каждые 3 минуты (создание директории, запись в файл).
+5. * Подключить PPA-репозиторий на выбор. Установить из него пакет. Удалить PPA из системы.
+6. * Создать задачу резервного копирования (tar) домашнего каталога пользователя. Реализовать с использованием пользовательских crontab-файлов.
+
+Результат:
+Текст команд, которые применялись при выполнении задания. При наличи: часть конфигурационных файлов, которые решают задачу. Присылаем в формате текстового документа: задание и команды для решения (без вывода). Формат - PDF (один файл на все задания).
+-----------------------------------------------------------------------------------------------------------
+Решение:
+1. sudo apt install curl gnupg2 ca-certificates lsb-release ubuntu-keyring
+    
+   curl [https://nginx.org/keys/nginx_signing.key](https://nginx.org/keys/nginx_signing.key) | gpg --dearmor     | sudo tee /usr/share/keyrings/nginx-archive-keyring.gpg >/dev/null
+    
+   gpg --dry-run --quiet --no-keyring --import --import-options import-show /usr/share/keyrings/nginx-archive-keyring.gpg
+    
+   echo "deb [signed-by=/usr/share/keyrings/nginx-archive-keyring.gpg] \
+   [http://nginx.org/packages/ubuntu](http://nginx.org/packages/ubuntu) `lsb_release -cs` nginx"     | sudo tee /etc/apt/sources.list.d/nginx.list
+    
+   echo -e "Package: *\nPin: origin [nginx.org](http://nginx.org/)\nPin: release o=nginx\nPin-Priority: 900\n"     | sudo tee /etc/apt/preferences.d/99nginx
+    
+   sudo apt update
+    
+   sudo apt install nginx
+    
+2. apt download gimp
+    
+   dpkg -r gimp
+    
+   dpkg -i gimp_2.10.30-1build1_amd64.deb
+    
+3. snap install gimp
+    
+   snap remove gimp
+    
+4. cat history.pdf
+    
+   crontab -e
+    
+   */3 * * * * history >> /home/vboxuser/history.pdf
+    
+5. ls -1 /etc/apt/sources.list.d
+    
+   sudo add-apt-repository ppa:thomas-schiex/blender
+    
+   sudo apt install blender
+    
+   sudo add-apt-repository --remove ppa:thomas-schiex/blender
+    
+6. crontab -e
+    
+   0 */7 * * * tar -cf /home/vboxuser/test.tar /home/vboxuser/test
+-----------------------------------------------------------------------------------------------------------
