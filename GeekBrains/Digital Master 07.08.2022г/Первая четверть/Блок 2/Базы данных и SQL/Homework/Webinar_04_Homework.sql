@@ -43,6 +43,13 @@ SELECT COUNT(mark) AS total,
 (SELECT COUNT(*) FROM auto WHERE mark NOT IN('BMW')) AS 'not BMW'
 FROM auto;
 
+SELECT mark, @c:=count(DISTINCT(regnum)) AS count,
+(SELECT count(*)-@c FROM auto) AS other,
+(SELECT count(*) FROM auto) AS total
+FROM auto
+GROUP BY mark
+ORDER BY mark;
+
 -- Задание 3. Даны 2 таблицы, созданные следующим образом:
 create table test_a (id INT, test varchar(10));
 create table test_b (id INT);
